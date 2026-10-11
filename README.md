@@ -64,13 +64,13 @@ The computer result is random, so your output may differ each time.
 ## ⚙️ How the Code Works
 
 - `a = "Head"` and `b = "Tail"` store the two possible outcomes.
-- `random.randint(0, 2)` generates an integer from `0` to `2`, inclusive.
+- `random.randint(0, 1)` generates an integer from `0` to `1`, inclusive.
 - If the generated number is `1`, the computer chooses `Head`; otherwise, it chooses `Tail`.
 - The program compares `computer_output` with `Choose` to determine the displayed result.
 
 ## ⚠️ Current Limitations
 
-- **Uneven probabilities:** `random.randint(0, 2)` can generate `0`, `1`, or `2`. Only `1` produces `Head`, while both `0` and `2` produce `Tail`. Therefore, Head has a 1-in-3 chance and Tail has a 2-in-3 chance.
+- **Uneven probabilities:** `random.randint(0, 1)` can generate `0`, `1`. Only `1` produces `Head`, while `0` produce `Tail`. Therefore, Head has a 1 in  chance and Tail has a 0 in chance.
 - **Input is case-sensitive:** `head`, `HEAD`, or extra spaces will not match `Head` or `Tail` exactly.
 - **Missing import in the snippet:** `import random` must be included before calling `random.randint()`.
 - **Redundant final `else`:** The final `else: pass` is unnecessary because the preceding `if` and `elif` already cover all possible comparisons.
