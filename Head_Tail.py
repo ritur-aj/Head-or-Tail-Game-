@@ -700,8 +700,9 @@ print("Welcome to Head or Tail Game : ")
 
 a = "Head"
 b = "Tail"
-Computer = random.randint(0,2)
+Computer = random.randint(0,1)
 Choose = input("Choose between Head or Tail : ")
+Choose = Choose.capitalize()
 print(f"Your Choose : {Choose} ")
 
 computer_output= str()
